@@ -22,6 +22,8 @@ const translations = {
       pill1: "无模型也能进入",
       pill2: "流式输出，可随时停止",
       pill3: "图片 + 翻译 + 应急问答",
+      iosCaption: "iOS 版主界面",
+      androidCaption: "Android 版主界面",
       appStoreNote: "App Store 价格已配置为限时免费，2026-06-22 00:00 恢复 4.99 美元。"
     },
     announcement: {
@@ -190,6 +192,8 @@ const translations = {
       pill1: "Enter without a model",
       pill2: "Streaming answers, stop anytime",
       pill3: "Images + translation + emergency Q&A",
+      iosCaption: "iOS home screen",
+      androidCaption: "Android home screen",
       appStoreNote: "The App Store price is set to free for the limited-time campaign and returns to $4.99 on 2026-06-22 00:00."
     },
     announcement: {
