@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="备问支持页面。">
+  <title>备问支持</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="support">
+  <div class="page-backdrop" aria-hidden="true"></div>
+  <nav class="navbar">
+    <div class="brand-wrap">
+      <img src="assets/beiwen/icon/app-icon.png" alt="备问图标" class="brand-icon">
+      <div class="brand-copy">
+        <div class="brand-title" data-i18n="nav.brand">备问 Beiwen</div>
+        <div class="brand-subtitle" data-i18n="nav.pill">iOS + Android</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="nav.platforms">双端版本</a>
+      <a href="index.html#features" data-i18n="nav.features">核心能力</a>
+      <a href="index.html#gallery" data-i18n="nav.gallery">产品截图</a>
+      <a href="support.html" data-i18n="nav.support">支持</a>
+      <a href="legal/privacy.html" data-i18n="nav.privacy">隐私</a>
+      <a href="legal/terms.html" data-i18n="nav.terms">条款</a>
+      <div class="locale-switcher" role="group" aria-label="Language switcher">
+        <button class="lang-switch" type="button" data-set-locale="zh-Hans">中文</button>
+        <button class="lang-switch" type="button" data-set-locale="en">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section" style="padding-top: 2rem; max-width: 980px;">
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:0.5rem; color: var(--muted-strong); margin-bottom: 1.4rem;">&larr; <span data-i18n="common.backHome">返回首页</span></a>
+      <div class="section-kicker" data-i18n="supportPage.title">备问支持</div>
+      <h1 class="section-title text-gradient" style="margin-top: 0.8rem;" data-i18n="supportPage.title">备问支持</h1>
+      <p class="section-description" data-i18n="supportPage.intro">如果你在安装、模型下载、翻译、图片观察或回答结果上遇到问题，可以先看下面这几条常见说明。</p>
+
+      <div class="feature-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+        <article class="feature-card">
+          <div class="feature-icon">A</div>
+          <h3 data-i18n="supportPage.cards.a.title">模型下载</h3>
+          <p data-i18n="supportPage.cards.a.desc">备问允许你先进入主界面，再开始下载本地模型。下载完成不等于可用，模型还需要校验、安装并切换到 ready。</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">B</div>
+          <h3 data-i18n="supportPage.cards.b.title">iOS 和 Android</h3>
+          <p data-i18n="supportPage.cards.b.desc">iOS 版更强调启动后的预热和打赏型 IAP，Android 版更强调广告不遮挡关键回答和停止按钮。</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">C</div>
+          <h3 data-i18n="supportPage.cards.c.title">高风险内容</h3>
+          <p data-i18n="supportPage.cards.c.desc">遇到毒蛇、蘑菇、野外植物、医疗或法律等高风险场景时，答案只作为参考，不应替代专业帮助。</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">D</div>
+          <h3 data-i18n="supportPage.cards.d.title">联系</h3>
+          <p><span data-i18n="supportPage.cards.d.desc">如需进一步帮助，请联系</span> <a href="mailto:breet.jia@gmail.com">breet.jia@gmail.com</a>。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
