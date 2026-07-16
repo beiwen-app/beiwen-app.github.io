@@ -15,7 +15,7 @@ const translations = {
     },
     hero: {
       kicker: "离线优先 · iPhone AI 助理",
-      title: "限时免费开放，<br>没网也能先问。",
+      title: "没网也能先问，<br>先拿到参考答案。",
       subtitle: "备问是一个离线优先的 iPhone AI 助理。无论你在户外、旅行、弱网环境，还是只是想少用流量，都可以先进入主界面，再通过本地模型完成问答、翻译和图片辅助判断。",
       primary: "前往 App Store 下载",
       secondary: "了解核心能力",
@@ -24,12 +24,7 @@ const translations = {
       pill3: "图片 + 翻译 + 应急问答",
       iosCaption: "iOS 版主界面",
       androidCaption: "Android 版主界面",
-      appStoreNote: "App Store 价格已配置为限时免费，2026-06-22 00:00 恢复 4.99 美元。"
-    },
-    announcement: {
-      badge: "限时活动",
-      title: "2026-06-12 至 2026-06-22 00:00 免费开放",
-      desc: "活动页与 App Store 文案已同步，结束后会自动回到长期版本。"
+      appStoreNote: "iPhone 版支持本地模型和打赏型 IAP；Android 版本以实际发布状态为准。"
     },
     platforms: {
       kicker: "双端版本",
@@ -96,7 +91,7 @@ const translations = {
       support: "支持",
       privacy: "隐私政策",
       terms: "使用条款",
-      note: "备问 Beiwen · iPhone AI 助理 · 限时免费活动进行中"
+      note: "备问 Beiwen · iOS 和 Android · 离线优先应急 AI 助理"
     },
     supportPage: {
       title: "备问支持",
@@ -138,7 +133,7 @@ const translations = {
         },
         d: {
           title: "4. 平台差异",
-          desc: "iPhone 版本的打赏型 IAP 由 Apple 处理；Android 版本若启用广告变现，则广告 SDK 可能按其自身政策处理标准广告数据。我们会在对应版本上线时补充更具体的说明。"
+          desc: "iPhone 版本的打赏型 IAP 由 Apple 处理；如果启用 Android 广告变现，广告 SDK 可能按其自身政策处理标准广告数据。具体平台的处理方式以对应版本实际启用的分发和变现配置为准。"
         },
         e: {
           title: "5. 联系方式",
@@ -185,7 +180,7 @@ const translations = {
     },
     hero: {
       kicker: "Offline-first · iPhone AI assistant",
-      title: "Free for a limited time,<br>ask first, even without signal.",
+      title: "Ask first, even without signal.",
       subtitle: "Beiwen is an offline-first AI assistant for iPhone. Whether you are outdoors, traveling, on a weak signal, or simply saving data, you can open the main experience first and then use the local model for Q&A, translation, and image-assisted checks.",
       primary: "Download on the App Store",
       secondary: "Explore the capabilities",
@@ -194,12 +189,7 @@ const translations = {
       pill3: "Images + translation + emergency Q&A",
       iosCaption: "iOS home screen",
       androidCaption: "Android home screen",
-      appStoreNote: "The App Store price is set to free for the limited-time campaign and returns to $4.99 on 2026-06-22 00:00."
-    },
-    announcement: {
-      badge: "Limited-time campaign",
-      title: "Free from 2026-06-12 to 2026-06-22 00:00",
-      desc: "The landing page and App Store copy are aligned, and the long-term version will return after the campaign."
+      appStoreNote: "The iPhone version supports local models and tip-style IAP; Android availability depends on its public release status."
     },
     platforms: {
       kicker: "Two platforms",
@@ -266,7 +256,7 @@ const translations = {
       support: "Support",
       privacy: "Privacy policy",
       terms: "Terms of use",
-      note: "Beiwen · iPhone AI assistant · Limited-time free campaign in progress"
+      note: "Beiwen · iOS and Android · Offline-first emergency AI assistant"
     },
     supportPage: {
       title: "Beiwen support",
@@ -308,7 +298,7 @@ const translations = {
         },
         d: {
           title: "4. Platform differences",
-          desc: "The iPhone tip-style IAP is handled by Apple; if the Android version uses ad monetization, the ad SDK may process standard ad data under its own policies. We will add more specific details when each platform ships."
+          desc: "The iPhone tip-style IAP is handled by Apple; if Android ad monetization is enabled, the ad SDK may process standard ad data under its own policies. Platform-specific handling depends on the distribution and monetization configuration actually enabled for that version."
         },
         e: {
           title: "5. Contact",
@@ -349,21 +339,21 @@ const appStoreLinks = {
 const pageMeta = {
   home: {
     zh: {
-      title: "备问 Beiwen - 限时免费到 2026-06-22",
-      description: "备问是一款离线优先的 iPhone AI 助理。限时免费开放至 2026-06-22 00:00，适合旅行、弱网和隐私敏感场景。"
+      title: "备问 Beiwen - 离线优先的应急 AI 助理",
+      description: "备问是一款离线优先的 iPhone AI 助理，支持本地模型问答、翻译和图片辅助判断，适合旅行、弱网和隐私敏感场景。"
     },
     en: {
-      title: "Beiwen - Free Until 2026-06-22",
-      description: "Beiwen is an offline-first AI assistant for iPhone. Free for a limited time until 2026-06-22 00:00, built for travel, weak signals, and private tasks."
+      title: "Beiwen - An Offline-First AI Assistant",
+      description: "Beiwen is an offline-first AI assistant for iPhone, with local-model Q&A, translation, and image-assisted checks for travel, weak signals, and private tasks."
     }
   },
   support: {
     zh: {
-      title: "备问支持 - 限时免费活动",
+      title: "备问支持",
       description: "备问支持页面，汇总模型下载、iPhone 与 Android 差异、高风险内容和联系信息。"
     },
     en: {
-      title: "Beiwen Support - Limited-Time Free Campaign",
+      title: "Beiwen Support",
       description: "Beiwen support page with notes on model downloads, iPhone and Android differences, high-risk content, and contact info."
     }
   },
