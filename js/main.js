@@ -16,7 +16,7 @@ const translations = {
     hero: {
       kicker: "离线优先 · iPhone AI 助理",
       title: "没网也能先问，<br>先拿到参考答案。",
-      subtitle: "备问是一个离线优先的 iPhone AI 助理。无论你在户外、旅行、弱网环境，还是只是想少用流量，都可以先进入主界面，再通过本地模型完成问答、翻译和图片辅助判断。",
+      subtitle: "没网、信号弱，或想省流量时，你都可以先打开备问，再用本地模型问答、翻译或查看图片线索，及时获得一份可参考的信息。",
       primary: "前往 App Store 下载",
       secondary: "了解核心能力",
       pill1: "无模型也能进入",
@@ -24,54 +24,54 @@ const translations = {
       pill3: "图片 + 翻译 + 应急问答",
       iosCaption: "iOS 版主界面",
       androidCaption: "Android 版主界面",
-      appStoreNote: "iPhone 版支持本地模型和打赏型 IAP；Android 版本以实际发布状态为准。"
+      appStoreNote: "在 iPhone 上，你可以使用本地模型，也可以选择打赏支持；Android 版请以实际上架情况为准。"
     },
     platforms: {
       kicker: "双端版本",
-      title: "同一产品，两个原生入口",
-      subtitle: "iPhone 和 Android 共用一套产品边界，但分别保留平台体验差异。iPhone 更强调启动后预热与打赏型 IAP，Android 更强调广告不遮挡关键回答和 Android 15 基线。",
+      title: "在 iPhone 和 Android 上，随时先问",
+      subtitle: "无论你用 iPhone 还是 Android，都可以先进入主界面，再按需下载模型。我们按平台特点安排体验：iPhone 会在模型就绪后进行轻量预热，帮你减少首次等待；Android 广告不会挡住输入、停止操作或风险提示。",
       ios: {
         badge: "iPhone / iPad",
         title: "iPhone 版",
-        desc: "打开后先进入主体验。模型下载不会阻塞入口，ready 后低优先级预热，尽量减少第一次提问等待。",
-        point1: "无模型也能进 App",
-        point2: "下载、校验、安装、ready 分段可见",
-        point3: "免费使用 + 打赏型 IAP"
+        desc: "你可以先进入主界面，再按需下载模型；模型就绪后，我们会提前完成轻量预热，帮你减少第一次提问的等待。",
+        point1: "没有模型也能先浏览和准备",
+        point2: "下载、校验和安装状态清晰可见",
+        point3: "你可免费使用，也可选择打赏支持"
       },
       android: {
         badge: "Android 15+",
         title: "Android 版",
-        desc: "Android 版本从 Android 15 起步，广告只承担变现，不打断输入、停止按钮和高风险提示。",
-        point1: "Android 15 作为最低基线",
-        point2: "广告不遮挡关键回答和停止按钮",
-        point3: "下载任务可在后台继续"
+        desc: "你可在 Android 15 或更新版本使用备问；广告不会打断输入，也不会遮住停止按钮和风险提示。",
+        point1: "支持 Android 15 或更新版本",
+        point2: "回答、停止按钮和风险提示清楚可见",
+        point3: "模型下载可在后台继续"
       }
     },
     features: {
       kicker: "核心能力",
-      title: "把答案做得可读、可停、可参考",
-      subtitle: "备问不是通用云端聊天框，而是面向弱网和突发场景的本地优先助手。主路径围绕“先进入、先回答、可终止、可扫读”来设计。",
+      title: "需要帮助时，尽快拿到清楚的参考",
+      subtitle: "遇到弱网或突发情况时，你可以先打开、尽快开始提问；答案逐段出现，你能随时停止，再快速浏览重点。",
       card1: {
         title: "离线优先进入",
-        desc: "没有模型时也能先进入 App，阅读功能介绍、查看下载状态，再决定是否开始下载。"
+        desc: "还没下载模型？你可以先查看功能和下载状态，准备好后再决定是否下载。"
       },
       card2: {
         title: "流式输出可中止",
-        desc: "回答按段落逐步显示，Stop 始终可见，用户可以随时停止并保留已经生成的内容。"
+        desc: "你可以边看回答边判断是否继续；随时停止，并保留已经生成的内容。"
       },
       card3: {
         title: "图片辅助判断",
-        desc: "支持帐篷、钓鱼点位、未知蘑菇和危险动物等高风险图片场景，只给观察与参考，不给确定性结论。"
+        desc: "看到不熟悉的帐篷、钓鱼点位、蘑菇或动物时，你可以先查看图片线索。我们只提供观察与参考，不代替专业判断。"
       },
       card4: {
         title: "翻译与应急短句",
-        desc: "在旅行、跨境和弱网时快速生成求助、问路、身体不适说明和简短沟通文本。"
+        desc: "需要问路、求助或说明身体不适时，你可以快速准备简短沟通文本，减少临场组织语言的压力。"
       }
     },
     gallery: {
       kicker: "产品截图",
-      title: "这些图来自我们生成的产品图",
-      subtitle: "活动页直接引用这套素材，方便后续做 GitHub Pages 和版本更新。",
+      title: "关键时刻，帮你先找到下一步",
+      subtitle: "看看你如何用问答、图片观察和翻译，先拿到随时可参考的信息。",
       ios: {
         1: "首页",
         2: "图片观察",
@@ -91,27 +91,28 @@ const translations = {
       support: "支持",
       privacy: "隐私政策",
       terms: "使用条款",
-      note: "备问 Beiwen · iOS 和 Android · 离线优先应急 AI 助理"
+      note: "无论你使用 iOS 还是 Android，我们都帮你在离线时找到可参考的答案。"
     },
     supportPage: {
-      title: "备问支持",
-      intro: "如果你在安装、模型下载、翻译、图片观察或回答结果上遇到问题，可以先看下面这几条常见说明。",
+      kicker: "支持与建议",
+      title: "遇到问题？我们来帮你",
+      intro: "模型下载、翻译、图片观察或回答遇到问题？先看看下面的说明；如果还没解决，再联系我们。",
       cards: {
         a: {
           title: "模型下载",
-          desc: "备问允许你先进入主界面，再开始下载本地模型。下载完成不等于可用，模型还需要校验、安装并切换到 ready。"
+          desc: "你可以先打开首页，再决定是否下载本地模型。下载完成后，请等模型完成校验和安装，直到状态显示“可用”再开始使用。"
         },
         b: {
           title: "iPhone 和 Android",
-          desc: "iPhone 版更强调启动后的预热和打赏型 IAP，Android 版更强调广告不遮挡关键回答和停止按钮。"
+          desc: "在 iPhone 上，模型就绪后会进行预热，帮你减少首次提问的等待；在 Android 上，广告不会遮挡回答或停止按钮。你也可以选择打赏支持 iPhone 版。"
         },
         c: {
           title: "高风险内容",
-          desc: "遇到毒蛇、蘑菇、野外植物、医疗或法律等高风险场景时，答案只作为参考，不应替代专业帮助。"
+          desc: "如果你遇到毒蛇、蘑菇、野外植物、医疗或法律等高风险问题，请把回答当作线索，并及时寻求专业帮助。"
         },
         d: {
           title: "联系",
-          desc: "如需进一步帮助，请联系"
+          desc: "还需要帮助？请给我们发邮件："
         }
       }
     },
@@ -181,7 +182,7 @@ const translations = {
     hero: {
       kicker: "Offline-first · iPhone AI assistant",
       title: "Ask first, even without signal.",
-      subtitle: "Beiwen is an offline-first AI assistant for iPhone. Whether you are outdoors, traveling, on a weak signal, or simply saving data, you can open the main experience first and then use the local model for Q&A, translation, and image-assisted checks.",
+      subtitle: "When you’re offline, on a weak signal, or saving data, open Beiwen and use a local model to ask questions, translate, or check an image for useful context.",
       primary: "Download on the App Store",
       secondary: "Explore the capabilities",
       pill1: "Enter without a model",
@@ -189,54 +190,54 @@ const translations = {
       pill3: "Images + translation + emergency Q&A",
       iosCaption: "iOS home screen",
       androidCaption: "Android home screen",
-      appStoreNote: "The iPhone version supports local models and tip-style IAP; Android availability depends on its public release status."
+      appStoreNote: "On iPhone, you can use a local model and optionally support us with a tip. Check the current release status for Android."
     },
     platforms: {
       kicker: "Two platforms",
-      title: "One product, two native entry points",
-      subtitle: "iPhone and Android share the same product boundaries, while preserving each platform's experience. iPhone emphasizes startup warm-up and tip-style IAP; Android emphasizes non-blocking ads and the Android 15 baseline.",
+      title: "Ask first on iPhone or Android",
+      subtitle: "Whichever phone you use, you can open the main screen first and download a model when you’re ready. We tune each version to its platform: on iPhone, a light warm-up after the model is ready helps shorten your first wait; on Android, ads stay clear of your input, stop control, and safety notes.",
       ios: {
         badge: "iPhone / iPad",
         title: "iPhone version",
-        desc: "Enter the main experience first. Model download does not block the app entry, and low-priority warm-up starts once the model is ready.",
-        point1: "Enter the app without a model",
-        point2: "Download, verification, install, and ready states are visible",
-        point3: "Free to use + tip-style IAP"
+        desc: "You can open the app before downloading a model. Once it’s ready, we warm it up in the background to help shorten your first wait.",
+        point1: "Explore before downloading a model",
+        point2: "See download, verification, and install progress",
+        point3: "Use it for free, with an optional tip to support us"
       },
       android: {
         badge: "Android 15+",
         title: "Android version",
-        desc: "Android starts from Android 15, and ads are strictly for monetization—they never interrupt input, stop controls, or high-risk warnings.",
-        point1: "Android 15 as the minimum baseline",
-        point2: "Ads never cover key answers or the stop button",
-        point3: "Downloads can continue in the background"
+        desc: "Use Beiwen on Android 15 or later; ads never interrupt your input or cover the Stop control and safety notes.",
+        point1: "Use Android 15 or later",
+        point2: "Keep answers, Stop, and safety notes in view",
+        point3: "Continue model downloads in the background"
       }
     },
     features: {
       kicker: "Core capabilities",
-      title: "Readable, stoppable, and useful answers",
-      subtitle: "Beiwen is not a generic cloud chat box. It is a local-first assistant designed for weak-signal and urgent situations. The main flow is built around entering early, answering early, stopping anytime, and scanning fast.",
+      title: "Get a clear reference when you need help",
+      subtitle: "When your signal is weak or something unexpected happens, you can open the app and start asking quickly. Answers appear as they’re written, so you can stop anytime and scan the key points.",
       card1: {
         title: "Offline-first entry",
-        desc: "Even without a model, you can enter the app first, read the feature overview, and decide when to download."
+        desc: "Haven’t downloaded a model yet? You can explore the app and check download details before deciding."
       },
       card2: {
         title: "Streaming answers you can stop",
-        desc: "Answers appear in chunks, Stop is always visible, and you can pause while keeping what has already been generated."
+        desc: "Read as you go, stop whenever you need to, and keep the answer generated so far."
       },
       card3: {
         title: "Image-assisted checks",
-        desc: "Useful for tents, fishing spots, unknown mushrooms, and dangerous animals—observe and reference only, never claim certainty."
+        desc: "Check image clues about unfamiliar tents, fishing spots, mushrooms, or animals. We offer observations for reference, not a substitute for expert judgment."
       },
       card4: {
         title: "Translation and emergency phrases",
-        desc: "Quickly generate help requests, directions, health notes, and short communication lines while traveling or on weak signals."
+        desc: "When you need directions, help, or a way to explain a health concern, quickly prepare a short message and spend less time searching for words."
       }
     },
     gallery: {
       kicker: "Screenshots",
-      title: "These images come from our generated product assets",
-      subtitle: "The landing page reuses this asset set so GitHub Pages and version updates stay easy to maintain.",
+      title: "Find a useful next step, even offline",
+      subtitle: "See how you can ask a question, check an image, or translate to get practical context when you need it.",
       ios: {
         1: "Home",
         2: "Image observation",
@@ -256,27 +257,28 @@ const translations = {
       support: "Support",
       privacy: "Privacy policy",
       terms: "Terms of use",
-      note: "Beiwen · iOS and Android · Offline-first emergency AI assistant"
+      note: "We help you find useful answers offline on iOS and Android."
     },
     supportPage: {
-      title: "Beiwen support",
-      intro: "If you run into trouble with installation, model download, translation, image checks, or answer quality, start with these common notes.",
+      kicker: "Support",
+      title: "Need help? We’re here.",
+      intro: "Having trouble with a model download, translation, image check, or answer? Start with these tips. If you still need help, contact us.",
       cards: {
         a: {
           title: "Model downloads",
-          desc: "Beiwen lets you enter the main screen before downloading a local model. Downloaded does not mean ready; the model still needs verification, installation, and a ready state."
+          desc: "You can open the home screen before downloading a local model. After the download, wait for verification and installation to finish and the status to show Ready."
         },
         b: {
           title: "iPhone and Android",
-          desc: "The iPhone version emphasizes warm-up and tip-style IAP; the Android version emphasizes non-blocking ads and the stop button."
+          desc: "On iPhone, a warm-up after the model is ready can shorten your first wait; on Android, ads won’t cover your answer or Stop control. You can also choose to support the iPhone version with a tip."
         },
         c: {
           title: "High-risk content",
-          desc: "For snakes, mushrooms, wild plants, medical, or legal scenarios, the output is reference-only and must not replace professional help."
+          desc: "If you’re dealing with snakes, mushrooms, wild plants, medical, or legal questions, treat the answer as a clue and seek professional help."
         },
         d: {
           title: "Contact",
-          desc: "If you need more help, contact"
+          desc: "Still need help? Email us at"
         }
       }
     },
@@ -340,21 +342,21 @@ const pageMeta = {
   home: {
     zh: {
       title: "备问 Beiwen - 离线优先的应急 AI 助理",
-      description: "备问是一款离线优先的 iPhone AI 助理，支持本地模型问答、翻译和图片辅助判断，适合旅行、弱网和隐私敏感场景。"
+      description: "没网或信号弱时，你也可以用备问的本地模型问答、翻译和查看图片线索，尽快获得可参考的信息。"
     },
     en: {
       title: "Beiwen - An Offline-First AI Assistant",
-      description: "Beiwen is an offline-first AI assistant for iPhone, with local-model Q&A, translation, and image-assisted checks for travel, weak signals, and private tasks."
+      description: "When you’re offline or on a weak signal, use Beiwen for local Q&A, translation, and image clues to get useful context sooner."
     }
   },
   support: {
     zh: {
       title: "备问支持",
-      description: "备问支持页面，汇总模型下载、iPhone 与 Android 差异、高风险内容和联系信息。"
+      description: "查看模型下载、iPhone 与 Android 使用提示和高风险内容说明；需要帮助时，联系我们。"
     },
     en: {
       title: "Beiwen Support",
-      description: "Beiwen support page with notes on model downloads, iPhone and Android differences, high-risk content, and contact info."
+      description: "Find tips for model downloads, using Beiwen on iPhone or Android, and handling high-risk questions. Contact us if you need more help."
     }
   },
   privacy: {
@@ -439,6 +441,11 @@ function updateImages() {
     "ios-3": `assets/beiwen/ios/${currentLocaleFolder}/03-translation.png`,
     "ios-4": `assets/beiwen/ios/${currentLocaleFolder}/04-answer.png`,
     "ios-5": `assets/beiwen/ios/${currentLocaleFolder}/05-model-center.png`,
+    "appstore-ios-1": `assets/beiwen/ios/app-store/${currentLocaleFolder}/01-home.png`,
+    "appstore-ios-2": `assets/beiwen/ios/app-store/${currentLocaleFolder}/02-image-observation.png`,
+    "appstore-ios-3": `assets/beiwen/ios/app-store/${currentLocaleFolder}/03-translation.png`,
+    "appstore-ios-4": `assets/beiwen/ios/app-store/${currentLocaleFolder}/04-answer.png`,
+    "appstore-ios-5": `assets/beiwen/ios/app-store/${currentLocaleFolder}/05-model-center.png`,
     "android-1": `assets/beiwen/android/${currentLocaleFolder}/android-phone-01.png`,
     "android-2": `assets/beiwen/android/${currentLocaleFolder}/android-phone-02.png`,
     "android-3": `assets/beiwen/android/${currentLocaleFolder}/android-phone-03.png`,
@@ -473,6 +480,8 @@ function updateMeta() {
   if (metaDescription) {
     metaDescription.setAttribute("content", description);
   }
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", description);
 }
 
 function updateAppStoreLinks() {

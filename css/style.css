@@ -1,15 +1,44 @@
 :root {
-  --beiwen-bg: #05070d;
-  --beiwen-surface: rgba(255, 255, 255, 0.05);
-  --beiwen-surface-strong: rgba(255, 255, 255, 0.09);
-  --beiwen-border: rgba(255, 255, 255, 0.12);
-  --beiwen-text-primary: #f8fbff;
-  --beiwen-text-secondary: rgba(248, 251, 255, 0.72);
-  --beiwen-accent: #69a7ff;
-  --beiwen-accent-strong: #8fc1ff;
-  --beiwen-glow: rgba(105, 167, 255, 0.26);
-  --beiwen-warning: #ffcf5b;
-  --beiwen-success: #5fe0a8;
+  color-scheme: light dark;
+  --beiwen-bg: #f3f5f8;
+  --beiwen-surface: #ffffff;
+  --beiwen-surface-strong: #ffffff;
+  --beiwen-border: #d9e0e9;
+  --beiwen-text-primary: #1c2b40;
+  --beiwen-text-secondary: #667487;
+  --beiwen-accent: #356fae;
+  --beiwen-accent-strong: #285f98;
+  --beiwen-glow: rgba(53, 111, 174, 0.05);
+  --beiwen-warning: #8b681e;
+  --beiwen-success: #397a68;
+  --beiwen-background: #f3f5f8;
+  --beiwen-navbar: #f7f8fa;
+  --beiwen-card: #ffffff;
+  --beiwen-control: #edf1f5;
+  --beiwen-action: #dce8f5;
+  --beiwen-gradient-heading: #1c2b40;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --beiwen-bg: #171d27;
+    --beiwen-surface: #202936;
+    --beiwen-surface-strong: #293545;
+    --beiwen-border: #394657;
+    --beiwen-text-primary: #edf1f6;
+    --beiwen-text-secondary: #b1bdcb;
+    --beiwen-accent: #83add6;
+    --beiwen-accent-strong: #a9c7e4;
+    --beiwen-glow: rgba(131, 173, 214, 0.05);
+    --beiwen-warning: #d0ad62;
+    --beiwen-success: #83b6a5;
+    --beiwen-background: #171d27;
+    --beiwen-navbar: #1b232e;
+    --beiwen-card: #202936;
+    --beiwen-control: #293545;
+    --beiwen-action: #31506d;
+    --beiwen-gradient-heading: #edf1f6;
+  }
 }
 
 * {
@@ -38,24 +67,15 @@ h1, h2, h3, h4 {
 }
 
 .text-gradient {
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.64) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--beiwen-gradient-heading);
 }
 
 .accent-gradient {
-  background: linear-gradient(90deg, #69a7ff 0%, #5fe0a8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--beiwen-accent);
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(105, 167, 255, 0.18), transparent 28%),
-    radial-gradient(circle at 80% 0%, rgba(95, 224, 168, 0.12), transparent 22%),
-    linear-gradient(180deg, #04060b 0%, #060913 100%);
+  background: var(--beiwen-background);
   color: var(--beiwen-text-primary);
 }
 
@@ -69,15 +89,7 @@ a {
 }
 
 .page-backdrop {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(105, 167, 255, 0.14), transparent 26%),
-    radial-gradient(circle at 80% 10%, rgba(95, 224, 168, 0.10), transparent 20%),
-    radial-gradient(circle at 60% 80%, rgba(255, 207, 91, 0.08), transparent 24%);
-  filter: blur(36px);
-  opacity: 0.85;
+  display: none;
 }
 
 .navbar {
@@ -89,9 +101,9 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background: rgba(6, 9, 19, 0.74);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: var(--beiwen-navbar);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--beiwen-border);
 }
 
@@ -211,10 +223,8 @@ a {
   padding: 1rem 1.1rem;
   border: 1px solid rgba(105, 167, 255, 0.34);
   border-radius: 22px;
-  background:
-    linear-gradient(180deg, rgba(105, 167, 255, 0.16), rgba(105, 167, 255, 0.08)),
-    rgba(255, 255, 255, 0.04);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+  background: var(--beiwen-action);
+  box-shadow: 0 10px 28px rgba(25, 39, 57, 0.10);
 }
 
 .activity-banner__badge {
@@ -296,15 +306,15 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(180deg, #f8fbff 0%, #dce8ff 100%);
-  color: #0b1220;
-  box-shadow: 0 18px 40px rgba(105, 167, 255, 0.22);
+  background: var(--beiwen-accent);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(31, 68, 108, 0.16);
 }
 
 .btn-secondary {
   color: var(--beiwen-text-primary);
   border: 1px solid var(--beiwen-border);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--beiwen-control);
 }
 
 .btn-primary:hover,
@@ -324,7 +334,7 @@ a {
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
   border: 1px solid var(--beiwen-border);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--beiwen-control);
   color: var(--beiwen-text-secondary);
   font-size: 0.86rem;
 }
@@ -346,8 +356,8 @@ a {
   overflow: hidden;
   border-radius: 28px;
   border: 1px solid var(--beiwen-border);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+  background: var(--beiwen-card);
+  box-shadow: 0 16px 36px rgba(25, 39, 57, 0.16);
 }
 
 .device-card img {
@@ -412,10 +422,8 @@ a {
   padding: 1.3rem;
   border-radius: 24px;
   border: 1px solid var(--beiwen-border);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
-    rgba(255, 255, 255, 0.03);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.2);
+  background: var(--beiwen-card);
+  box-shadow: 0 10px 28px rgba(25, 39, 57, 0.08);
 }
 
 .platform-topline {
@@ -467,8 +475,8 @@ a {
 .shot-grid figure {
   overflow: hidden;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--beiwen-border);
+  background: var(--beiwen-card);
 }
 
 .shot-grid img,
@@ -488,6 +496,10 @@ a {
 .feature-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 1.5rem;
+}
+
+.support-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .feature-icon {
@@ -524,8 +536,8 @@ a {
 .gallery-row img {
   border-radius: 20px;
   border: 1px solid var(--beiwen-border);
-  background: rgba(255, 255, 255, 0.03);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+  background: var(--beiwen-card);
+  box-shadow: 0 10px 28px rgba(25, 39, 57, 0.10);
 }
 
 .footer {
